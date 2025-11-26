@@ -1,0 +1,11 @@
+# Usando el intérprete de Python
+
+El intérprete de Python suele instalarse en rutas como /usr/local/bin/python3.14 en sistemas Unix, y se puede ejecutar directamente desde la terminal si dicha ruta está en el PATH del shell. En Windows, al instalar desde la Microsoft Store, el comando python3.14 está disponible; también se puede usar el lanzador py.exe si está instalado. Para salir del intérprete, se puede enviar el carácter de fin de archivo (Control-D en Unix, Control-Z en Windows) o usar el comando quit().
+
+El intérprete admite edición interactiva, historial y autocompletado en sistemas con soporte para GNU Readline; una forma rápida de verificarlo es presionar Control-P al inicio: si no se muestra ^P ni suena un pitido, las funciones de edición no están disponibles. El comportamiento del intérprete es análogo al de un shell: en modo interactivo, muestra el prompt >>> y, para líneas de continuación, el prompt ...; si recibe un archivo como argumento, lo ejecuta como script.
+
+Se pueden ejecutar comandos directamente con python -c "comando", donde el contenido entre comillas se interpreta como código Python. También es posible ejecutar módulos instalados con python -m módulo, lo que permite usar módulos estándar (como http.server o json.tool) como scripts. Al usar python -i script.py, se ejecuta el script y luego se entra al modo interactivo, útil para depuración.
+
+Los argumentos pasados al intérprete se almacenan en sys.argv como una lista de cadenas. sys.argv[0] contiene el nombre del script, - si se lee de entrada estándar, -c si se usa esa opción, o el nombre completo del módulo si se usa -m. Los argumentos que siguen a -c o -m no son procesados por el intérprete, pero sí se incluyen en sys.argv para que el código los maneje.
+
+Por defecto, los archivos fuente de Python se interpretan como UTF-8, lo que permite usar caracteres de múltiples idiomas en literales y comentarios. Si se necesita otra codificación, debe declararse en un comentario especial en la primera línea del archivo: # -*- coding: nombre_codificacion -*-. Si el archivo comienza con un shebang (como #!/usr/bin/env python3), la declaración de codificación debe ir en la segunda línea.
