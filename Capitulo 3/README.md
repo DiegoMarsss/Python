@@ -1,5 +1,5 @@
 #  Una introducción informal a Python
-En este capitulo veresmos los siguientes ejemplos, la entrada y la salida se distinguen por la presencia o ausencia de prompts (>>> y …): para repetir el ejemplo, escribe todo después del prompt, cuando aparece; las líneas que no comienzan con un prompt son emitidas desde el intérprete.
+En este capitulo veremos los siguientes ejemplos, la entrada y la salida se distinguen por la presencia o ausencia de prompts (>>> y …): para repetir el ejemplo, escribe todo después del prompt, cuando aparece; las líneas que no comienzan con un prompt son emitidas desde el intérprete.
 
 Muchos de los ejemplos de este manual, incluso aquellos ingresados en el prompt interactivo, incluyen comentarios. Los comentarios en Python comienzan con el carácter numeral, #, y se extienden hasta el final visible de la línea. Un comentario quizás aparezca al comienzo de la línea o seguido de espacios en blanco o código, pero no dentro de una cadena de caracteres. Un carácter numeral dentro de una cadena de caracteres es sólo un carácter numeral. Ya que los comentarios son para aclarar código y no son interpretados por Python, pueden omitirse cuando se escriben los ejemplos.
 
@@ -51,7 +51,7 @@ diras que es % ese sirve para ver si un numero es par o impar, para sacar esto e
 - luego de eso restaremos 17 entre 15 que nos dara > 2, el dos significa que el numero es par
 - de ahi sale el 2 y para eso sirve el %
 
-Tambien podemos calcular potencias 
+También podemos calcular potencias 
 ```python
 >>> 5 ** 2  
 25
